@@ -1,26 +1,37 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --green: #1B4332;
+  --green-mid: #2D6A4F;
+  --green-light: #D8F3DC;
+  --red: #C1121F;
+  --red-light: #FFE5E7;
+  --cream: #FDF8F0;
+  --kraft: #E8D5B0;
+  --kraft-dark: #C4A96B;
+  --black: #1A1208;
+  --text: #2C1810;
+  --mid: #7A6652;
+  --border: #D4B896;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 27px,
+    rgba(180,140,80,0.07) 27px,
+    rgba(180,140,80,0.07) 28px
+  );
 }
